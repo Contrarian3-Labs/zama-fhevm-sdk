@@ -1,0 +1,296 @@
+/* Zama FHEVM SDK Documentation - Custom Styling */
+/* Matches official Zama documentation theme */
+
+:root {
+  /* Zama Brand Colors */
+  --zama-primary: #0033FF;
+  --zama-secondary: #00D4FF;
+  --zama-dark: #1a1a1a;
+  --zama-light: #ffffff;
+  --zama-gray-50: #fafafa;
+  --zama-gray-100: #f4f4f5;
+  --zama-gray-200: #e4e4e7;
+  --zama-gray-300: #d4d4d8;
+  --zama-gray-700: #3f3f46;
+  --zama-gray-800: #27272a;
+  --zama-gray-900: #18181b;
+
+  /* Code & Syntax */
+  --code-bg: #f6f8fa;
+  --code-border: #e1e4e8;
+  --inline-code-bg: rgba(175, 184, 193, 0.2);
+}
+
+/* Header/Logo styling */
+.book-header {
+  background: linear-gradient(90deg, var(--zama-primary) 0%, var(--zama-secondary) 100%);
+  padding: 1rem 0;
+}
+
+.book-header .btn {
+  color: var(--zama-light);
+}
+
+/* Sidebar styling */
+.book-summary {
+  background: var(--zama-gray-50);
+  border-right: 1px solid var(--zama-gray-200);
+}
+
+.book-summary ul.summary li a {
+  color: var(--zama-gray-800);
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease;
+}
+
+.book-summary ul.summary li.active > a,
+.book-summary ul.summary li a:hover {
+  background: var(--zama-primary);
+  color: var(--zama-light);
+  border-radius: 4px;
+}
+
+/* Content area */
+.book-body {
+  background: var(--zama-light);
+}
+
+.markdown-section {
+  max-width: 900px;
+  padding: 2rem;
+}
+
+/* Headings */
+.markdown-section h1 {
+  color: var(--zama-dark);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--zama-primary);
+}
+
+.markdown-section h2 {
+  color: var(--zama-gray-900);
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid var(--zama-gray-200);
+}
+
+.markdown-section h3 {
+  color: var(--zama-gray-800);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Links */
+.markdown-section a {
+  color: var(--zama-primary);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.markdown-section a:hover {
+  border-bottom-color: var(--zama-primary);
+}
+
+/* Code blocks */
+.markdown-section pre {
+  background: var(--code-bg);
+  border: 1px solid var(--code-border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.markdown-section code {
+  background: var(--inline-code-bg);
+  color: var(--zama-gray-800);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.875em;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+}
+
+.markdown-section pre code {
+  background: transparent;
+  padding: 0;
+  color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* Tables */
+.markdown-section table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.markdown-section th {
+  background: var(--zama-gray-100);
+  color: var(--zama-gray-900);
+  font-weight: 600;
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid var(--zama-gray-300);
+}
+
+.markdown-section td {
+  padding: 0.75rem;
+  border: 1px solid var(--zama-gray-200);
+}
+
+.markdown-section tr:nth-child(even) {
+  background: var(--zama-gray-50);
+}
+
+/* Blockquotes / Hints */
+.markdown-section blockquote {
+  border-left: 4px solid var(--zama-primary);
+  background: var(--zama-gray-50);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.markdown-section blockquote p {
+  margin: 0;
+  color: var(--zama-gray-800);
+}
+
+/* Info hint boxes (GitBook style) */
+.markdown-section .hint--info {
+  background: #e7f3ff;
+  border-left: 4px solid var(--zama-primary);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.markdown-section .hint--warning {
+  background: #fff4e6;
+  border-left: 4px solid #ff9800;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.markdown-section .hint--success {
+  background: #e8f5e9;
+  border-left: 4px solid #4caf50;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Lists */
+.markdown-section ul,
+.markdown-section ol {
+  padding-left: 2rem;
+  margin: 1rem 0;
+}
+
+.markdown-section li {
+  margin: 0.5rem 0;
+  line-height: 1.7;
+}
+
+/* Badges/Tags */
+.markdown-section .badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 3px;
+  background: var(--zama-gray-200);
+  color: var(--zama-gray-800);
+}
+
+/* Navigation buttons */
+.navigation {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--zama-gray-200);
+}
+
+.navigation a {
+  color: var(--zama-primary);
+  font-weight: 500;
+}
+
+/* Search box */
+#book-search-input {
+  border: 1px solid var(--zama-gray-300);
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  font-size: 0.875rem;
+}
+
+#book-search-input:focus {
+  outline: none;
+  border-color: var(--zama-primary);
+  box-shadow: 0 0 0 3px rgba(0, 51, 255, 0.1);
+}
+
+/* Copy button for code blocks */
+.copy-code-button {
+  background: var(--zama-primary);
+  color: var(--zama-light);
+  border: none;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.copy-code-button:hover {
+  background: var(--zama-secondary);
+  transform: translateY(-1px);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .markdown-section {
+    padding: 1rem;
+  }
+
+  .markdown-section h1 {
+    font-size: 2rem;
+  }
+
+  .markdown-section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --code-bg: #1e1e1e;
+    --code-border: #3c3c3c;
+  }
+
+  .book-body {
+    background: var(--zama-gray-900);
+  }
+
+  .markdown-section {
+    color: var(--zama-gray-100);
+  }
+
+  .markdown-section h1,
+  .markdown-section h2,
+  .markdown-section h3 {
+    color: var(--zama-light);
+  }
+}
